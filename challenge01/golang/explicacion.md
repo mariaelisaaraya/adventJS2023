@@ -23,7 +23,7 @@
 - Miramos el 5. No lo hemos visto antes, lo anotamos.
 - Miramos el 3. ¡Epa! Entonces, decimos "¡Encontramos el primer número que se repite: 3!".
 
-## SeudoCodigo
+## PseudoCodigo
 
 ```plaintext
 
