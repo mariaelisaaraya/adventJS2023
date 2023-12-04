@@ -29,7 +29,8 @@
 
 ## SeudoCodigo
 
-´´´
+```plaintext
+
 Procedimiento EncontrarPrimerRepetido(numeros):
     // Creamos un conjunto de números vistos
     numerosVistos = ConjuntoVacio()
@@ -46,4 +47,5 @@ Procedimiento EncontrarPrimerRepetido(numeros):
 
     // Si llegamos aquí, no encontramos ningún número repetido
     Devolver -1
-´´´
+    
+```
