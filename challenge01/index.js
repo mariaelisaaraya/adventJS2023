@@ -1,13 +1,12 @@
 function findFirstRepeated(gifts) {
-    const seenGifts = {};
-  
-    for (const gift of gifts) {
-      if (seenGifts[gift]) {
-        return gift;
-      }
-      seenGifts[gift] = true;
+  const seenGifts = new Set();
+
+  for (const gift of gifts) {
+    if (seenGifts.has(gift)) {
+      return gift;
     }
-  
-    return -1;
+    seenGifts.add(gift);
   }
-  
+
+  return -1;
+}
