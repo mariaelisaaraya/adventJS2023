@@ -2,7 +2,7 @@
 
 
 
-| IMG                                                                                              | ##  | Retos                                                           |  SoluciónJS                                                                     | 
+| IMG                                                                                              | Num  | Retos                                                           |  SoluciónJS                                                                     | 
 | ------------------------------------------------------------------------------------------------ | :-: | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | 
 |<img src="https://adventjs.dev/challenges-2023/1.png" width="50" style="object-fit: contain;" />|01|[🎁](https://adventjs.dev/es/challenges/2023/1)|[Ver](https://github.com/mariaelisaaraya/adventJS2023/blob/master/challenge01/index.js)| 
 |<img src="https://adventjs.dev/challenges-2023/2.png" width="50" style="object-fit: contain;" />|02|[🎁](https://adventjs.dev/es/challenges/2023/2)|[Ver](https://github.com/mariaelisaaraya/adventJS2023/blob/master/challenge02/index.js)|
