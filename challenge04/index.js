@@ -1,18 +1,18 @@
-function decode(message) {
+ function decode(message) {
     const stack = [];
-    let result = '';
+    let currentString = '';
   
     for (let char of message) {
       if (char === '(') {
-        stack.push(result);
-        result = '';
+        stack.push(currentString);
+        currentString = '';
       } else if (char === ')') {
-        const reversed = result.split('').reverse().join('');
-        result = stack.pop() + reversed;
+        const reversed = currentString.split('').reverse().join('');
+        currentString = stack.pop() + reversed;
       } else {
-        result += char;
+        currentString += char;
       }
     }
   
-    return result;
+    return currentString;
   }
