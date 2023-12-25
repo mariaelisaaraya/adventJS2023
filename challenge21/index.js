@@ -1,22 +1,24 @@
 function findBalancedSegment(message) {
-    let idxSegment = [];
-    let maxZeros = 0;
-    let maxOnes = 0;
-
-    for (let i = 0; i < message.length - 1; i++) {
-        let zeros = 0;
-        let ones = 0;
-
-        for (let j = i; j < message.length; j++) {
-        message[j] === 0 ? zeros++ : ones++;
-
-        if (zeros === ones && zeros > maxZeros && ones > maxOnes) {
-            idxSegment = [i, j];
-            maxZeros = zeros;
-            maxOnes = ones;
+    let maxLength = 0;
+    let balancedSegmentIndices = [];
+  
+    for (let start = 0; start < message.length; start++) {
+      let zerosCount = 0;
+      let onesCount = 0;
+  
+      for (let end = start; end < message.length; end++) {
+        if (message[end] === 0) {
+          zerosCount++;
+        } else {
+          onesCount++;
         }
+  
+        if (zerosCount === onesCount && end - start + 1 > maxLength) {
+          maxLength = end - start + 1;
+          balancedSegmentIndices = [start, end];
         }
+      }
     }
-
-    return maxZeros > 0 ? idxSegment : [];
-}
+  
+    return balancedSegmentIndices;
+  }

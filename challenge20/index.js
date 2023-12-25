@@ -1,25 +1,25 @@
 function distributeGifts(weights) {
-    const result = [];
-  
-    for (let y = 0; y < weights.length; y++) {
-      const topRow = weights[y - 1] || [];
-      const bottomRow = weights[y + 1] || [];
-      result[y] = [];
-  
-      for (let x = 0; x < weights[y].length; x++) {
-        const w = weights[y][x];
-        const top = topRow[x] || 0;
-        const bottom = bottomRow[x] || 0;
-        const left = weights[y][x - 1] || 0;
-        const right = weights[y][x + 1] || 0;
-  
-        const divisor = !!w + !!top + !!bottom + !!left + !!right;
-        const sumValues = w + top + bottom + left + right;
-        const newValue = Math.round(sumValues / divisor);
-  
-        result[y][x] = newValue;
-      }
+  const result = [];
+  let topRow = [];
+  let bottomRow = [];
+
+  for (const [y, weight] of weights.entries()) {
+    topRow = weights[y - 1];
+    bottomRow = weights[y + 1];
+    result[y] = [];
+
+    for (const [x, w] of weight.entries()) {
+      let top = topRow?.[x],
+        bottom = bottomRow?.[x];
+      let left = weight?.[x - 1],
+        right = weight?.[x + 1];
+      const divisor = !!w + !!top + !!bottom + !!left + !!right;
+      (top ??= 0), (bottom ??= 0), (left ??= 0), (right ??= 0);
+
+      const newValue = Math.round((w + top + bottom + left + right) / divisor);
+      result[y][x] = newValue;
     }
-  
-    return result;
   }
+
+  return result;
+}
