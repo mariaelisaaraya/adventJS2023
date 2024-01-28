@@ -63,27 +63,28 @@ Respuesta: Identificando pasos lógicos y secuenciales para resolver un problema
 20 - ¿Cuál es el propósito de las funciones en un programa?
 - Respuesta: Las funciones encapsulan bloques de código para realizar tareas específicas y facilitan la reutilización del código.
 
+21- ¿Cuál es la diferencia entre una parametro y un argumento? ¿Son siempre necesarias?
+- Respuesta:
 
+Parámetro: Es un nombre de variable que se especifica en la declaración de una función. Los parámetros son como marcadores de posición para los valores que la función espera recibir cuando se llama. Por ejemplo, en la función 
 
+```
+function sumar(a, b)
+```
 
+ a y b son parámetros.
 
+Argumento: Es el valor real que se pasa a la función cuando se la llama. En la llamada a la función sumar(3, 5), los valores 3 y 5 son argumentos que se asignan a los parámetros a y b.
 
+No siempre son necesarios. Una función puede no tener parámetros y, por lo tanto, no requerir argumentos. Por ejemplo, la función 
 
+```
+function saludar() { ... } 
+```
 
+no toma parámetros. Sin embargo, en funciones que esperan parámetros, proporcionar los argumentos correctos es esencial para que la función realice su tarea correctamente.
 
+La distinción entre parámetros y argumentos es fundamental para entender cómo las funciones reciben y procesan información. Los parámetros son variables locales en la definición de la función, mientras que los argumentos son los valores reales que se pasan cuando la función es llamada.
 
-
-
-
-
-
-
-¿Puedes diseñar algoritmos sencillos para resolver problemas simples?
-
-Entender cómo planificar y estructurar soluciones a través de algoritmos.
-¿Conoces los conceptos básicos de estructuras de datos (arrays, listas, etc.)?
-
-Entender cómo organizar y almacenar datos de manera eficiente.
-¿Comprendes el concepto de programación orientada a objetos (si es aplicable)?
-
-Familiarizarte con la idea de encapsulación, herencia y polimorfismo.
+22 - ¿Cuál es la utilidad de los corchetes?
+- En programación, los corchetes son símbolos utilizados para definir y delimitar bloques de código. Su función principal es agrupar instrucciones y declaraciones, indicando el alcance de un conjunto particular de acciones. La forma en que se utilizan los corchetes depende del lenguaje de programación pero su propósito básico es bastante consistente. 
