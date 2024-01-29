@@ -6,7 +6,7 @@ Soluciones a los retos de programación de [adventJS](https://adventjs.dev/es) e
 
 <summary>Show / Hide</summary>
 
-### 🕹️ Challenges
+### Challenges
 
 |  #  |           Challenge            | Difficulty[^1] |                   Description                   |                 Solution                  |
 | :-: | :----------------------------: | :------------: | :---------------------------------------------: | :---------------------------------------: |
