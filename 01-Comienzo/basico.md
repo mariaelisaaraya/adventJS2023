@@ -1,7 +1,7 @@
 ## Preguntas que cubren desde lo más básico hasta conceptos un poco más avanzados para programar(fuera el lenguaje que sea). 
 
 > [!Important]
-> Solamente vos vas a saber si realmente tenes el conocimiento base, si crees que no entonces repasa mamita porque el conocimiento este es la base de todo.
+> Solamente vos vas a saber si realmente tenes el conocimiento base, si crees que no entonces repasa porque el conocimiento este es la base de todo.
 
 1 - ¿Qué es un programa de computadora?
 - Respuesta: Un conjunto de instrucciones que le indica a la computadora qué acciones realizar.
@@ -10,7 +10,7 @@
 - Respuesta: Utilizando las palabras clave var, let o const, seguido del nombre de la variable.
 
 3 - Explica qué es una instrucción o línea de código.
-Respuesta: Una instrucción es una línea de código que le indica a la computadora una acción específica.
+- Respuesta: Una instrucción es una línea de código que le indica a la computadora una acción específica.
 
 4 - Menciona al menos tres tipos de datos básicos en programación.
 Respuesta: Números, cadenas de texto y booleanos.
